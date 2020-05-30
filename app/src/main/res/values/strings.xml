@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">RoomRx</string>
+
+    <!-- EditText-->
+    <string name="et_name_hint">Заглавие</string>
+    <string name="et_content_hint">Содержание</string>
+
+
+    <!-- Menu-->
+    <string name="menu_search">search</string>
+    <string name="menu_add">add</string>
+    <string name="menu_done">done</string>
+    <string name="menu_edit">edit</string>
+
+
+    <!-- Toast -->
+    <string name="toast_cancel">Отменено!</string>
+    <string name="toast_empty">Пусто!</string>
+    <string name="toast_add">Добавлено</string>
+    <string name="toast_delete">Удалено</string>
+    <string name="toast_update">Обновлено</string>
+
+    <!-- Dialog -->
+    <string name="dialog_del_title">Удаление</string>
+    <string name="dialog_del_text">Уверены, что хотите удалить?</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Отменить</string>
+
+
+</resources>
