@@ -1,7 +1,6 @@
 package em.kh.ua.roomrx.ui;
 
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -25,23 +24,20 @@ public class DeleteDialog extends DialogFragment {
         AlertDialog.Builder builder = new AlertDialog.Builder(requireActivity());
         builder.setTitle(R.string.dialog_del_title)
                 .setMessage(R.string.dialog_del_text)
-                .setPositiveButton(R.string.dialog_ok, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        Bundle bundle = getArguments();
-                        if (bundle != null) {
-                            Note note = bundle.getParcelable("note_bundle");
-                            deleteViewModel = new ViewModelProvider(requireActivity())
-                                    .get(DeleteViewModel.class);
-                            deleteViewModel.deleteNote(note);
-                            Toast.makeText(requireActivity(),R.string.toast_delete,Toast.LENGTH_SHORT).show();
-                        }
+                .setPositiveButton(R.string.dialog_ok, (dialog, id) -> {
+                    Bundle bundle = getArguments();
+                    if (bundle != null) {
+                        Note note = bundle.getParcelable("note_bundle");
+                        deleteViewModel = new ViewModelProvider(requireActivity())
+                                .get(DeleteViewModel.class);
+                        deleteViewModel.deleteNote(note);
+                        Toast.makeText(requireActivity(),R.string.toast_delete,
+                                Toast.LENGTH_SHORT).show();
                     }
                 })
-                .setNegativeButton(R.string.dialog_cancel, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        Toast.makeText(requireActivity(),R.string.toast_cancel, Toast.LENGTH_SHORT).show();
-                    }
-                });
+                .setNegativeButton(R.string.dialog_cancel, (dialog, id) ->
+                        Toast.makeText(requireActivity(),R.string.toast_cancel,
+                                Toast.LENGTH_SHORT).show());
         return builder.create();
     }
 }
