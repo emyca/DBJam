@@ -62,26 +62,24 @@ public class DetailActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        switch (id){
-            case R.id.menu_edit:
-                Intent intent = new Intent(DetailActivity.this,
-                        UpdateActivity.class);
+        if (id == R.id.menu_edit) {
+            Intent intent = new Intent(DetailActivity.this,
+                    UpdateActivity.class);
 
-                String strId = Integer.valueOf(itemId).toString();
-                String strName = detailName.getText().toString();
-                String strContent = detailContent.getText().toString();
+            String strId = Integer.valueOf(itemId).toString();
+            String strName = detailName.getText().toString();
+            String strContent = detailContent.getText().toString();
 
-                Bundle bundle = new Bundle();
-                bundle.putString("note_id",strId);
-                bundle.putString("note_name",strName);
-                bundle.putString("note_content",strContent);
+            Bundle bundle = new Bundle();
+            bundle.putString("note_id", strId);
+            bundle.putString("note_name", strName);
+            bundle.putString("note_content", strContent);
 
-                intent.putExtras(bundle);
-                startActivity(intent);
+            intent.putExtras(bundle);
+            startActivity(intent);
 
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 }
