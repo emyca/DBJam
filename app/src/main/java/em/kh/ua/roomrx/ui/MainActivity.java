@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
             linearLayoutManager = new LinearLayoutManager(MainActivity.this);
             recyclerView.setLayoutManager(linearLayoutManager);
             recyclerView.setHasFixedSize(true);
-            adapter = new MainAdapter(new ArrayList<Note>(),this,this);
+            adapter = new MainAdapter(new ArrayList<>(),this,this);
             recyclerView.setAdapter(adapter);
             // divider line between RecyclerView items
             RecyclerView.ItemDecoration dividerItemDecoration =
