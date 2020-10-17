@@ -53,13 +53,11 @@ public class AddActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        switch (id){
-            case R.id.menu_done:
-                addNote();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        if (id == R.id.menu_done) {
+            addNote();
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
     private void addNote() {
