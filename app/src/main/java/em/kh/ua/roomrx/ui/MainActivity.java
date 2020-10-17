@@ -84,15 +84,14 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        switch (id){
-            case R.id.menu_search:
-                showData();
-                return true;
-            case R.id.menu_add:
-                startActivity(new Intent(this, AddActivity.class));
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        if (id == R.id.menu_search) {
+            showData();
+            return true;
+        }else  if (id == R.id.menu_add) {
+            startActivity(new Intent(this, AddActivity.class));
+            return true;
+        }else {
+            return super.onOptionsItemSelected(item);
         }
     }
 
