@@ -16,7 +16,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import em.kh.ua.roomrx.adapter.MainAdapter;
 import em.kh.ua.roomrx.database.Note;
@@ -24,7 +23,6 @@ import em.kh.ua.roomrx.viewmodel.MainViewModel;
 import em.kh.ua.roomrx.R;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.functions.Consumer;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnLongClickListener,
@@ -121,24 +119,14 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
     private void showData(){
         compositeDisposable.add(viewModel.fetchNotes()
             .observeOn(AndroidSchedulers.mainThread())
-            .subscribe(new Consumer<List<Note>>() {
-                @Override
-                public void accept(List<Note> notes) {
-                    adapter.addListNotes(notes);
-                }
-            })
+            .subscribe(notes -> adapter.addListNotes(notes))
         );
     }
 
     private void showData(String search){
         compositeDisposable.add(viewModel.fetchNotes(search)
             .observeOn(AndroidSchedulers.mainThread())
-            .subscribe(new Consumer<List<Note>>() {
-                @Override
-                public void accept(List<Note> notes) {
-                    adapter.addListNotes(notes);
-                }
-            })
+            .subscribe(notes -> adapter.addListNotes(notes))
         );
     }
 
