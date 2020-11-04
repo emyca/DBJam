@@ -1,4 +1,4 @@
-package em.kh.ua.roomrx.database;
+package em.kh.ua.roomrx.data.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -40,7 +40,7 @@ public class Note implements Parcelable {
         return noteId;
     }
 
-    void setNoteId(int noteId) {
+    public void setNoteId(int noteId) {
         this.noteId = noteId;
     }
 
@@ -48,7 +48,7 @@ public class Note implements Parcelable {
         return noteName;
     }
 
-    void setNoteName(String noteName) {
+    public void setNoteName(String noteName) {
         this.noteName = noteName;
     }
 
@@ -56,7 +56,7 @@ public class Note implements Parcelable {
         return noteContent;
     }
 
-    void setNoteContent(String noteContent) {
+    public void setNoteContent(String noteContent) {
         this.noteContent = noteContent;
     }
 

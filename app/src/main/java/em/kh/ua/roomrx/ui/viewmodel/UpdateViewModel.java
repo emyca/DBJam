@@ -1,12 +1,12 @@
-package em.kh.ua.roomrx.viewmodel;
+package em.kh.ua.roomrx.ui.viewmodel;
 
 import android.app.Application;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 
-import em.kh.ua.roomrx.database.Note;
-import em.kh.ua.roomrx.repository.NoteRepository;
+import em.kh.ua.roomrx.data.model.Note;
+import em.kh.ua.roomrx.data.repository.NoteRepository;
 
 public class UpdateViewModel extends AndroidViewModel {
 

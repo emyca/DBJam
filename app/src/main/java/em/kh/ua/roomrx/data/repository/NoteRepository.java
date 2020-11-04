@@ -1,12 +1,12 @@
-package em.kh.ua.roomrx.repository;
+package em.kh.ua.roomrx.data.repository;
 
 import android.app.Application;
 
 import java.util.List;
 
-import em.kh.ua.roomrx.database.Note;
-import em.kh.ua.roomrx.database.NoteDao;
-import em.kh.ua.roomrx.database.NoteDatabase;
+import em.kh.ua.roomrx.data.model.Note;
+import em.kh.ua.roomrx.data.database.NoteDao;
+import em.kh.ua.roomrx.data.database.NoteDatabase;
 import io.reactivex.Flowable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;

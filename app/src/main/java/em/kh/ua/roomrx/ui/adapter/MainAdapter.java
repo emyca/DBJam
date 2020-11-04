@@ -1,4 +1,4 @@
-package em.kh.ua.roomrx.adapter;
+package em.kh.ua.roomrx.ui.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import em.kh.ua.roomrx.R;
-import em.kh.ua.roomrx.database.Note;
+import em.kh.ua.roomrx.data.model.Note;
 
 public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder> {
 

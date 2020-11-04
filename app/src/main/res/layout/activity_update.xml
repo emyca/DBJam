@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorWhite"
-    tools:context="em.kh.ua.roomrx.ui.UpdateActivity">
+    tools:context=".ui.view.UpdateActivity">
 
     <include layout="@layout/toolbar" />
 

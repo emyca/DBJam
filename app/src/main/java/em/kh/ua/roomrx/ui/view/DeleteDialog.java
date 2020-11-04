@@ -1,4 +1,4 @@
-package em.kh.ua.roomrx.ui;
+package em.kh.ua.roomrx.ui.view;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -10,8 +10,8 @@ import androidx.fragment.app.DialogFragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import em.kh.ua.roomrx.R;
-import em.kh.ua.roomrx.database.Note;
-import em.kh.ua.roomrx.viewmodel.DeleteViewModel;
+import em.kh.ua.roomrx.data.model.Note;
+import em.kh.ua.roomrx.ui.viewmodel.DeleteViewModel;
 
 
 public class DeleteDialog extends DialogFragment {

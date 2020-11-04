@@ -1,4 +1,4 @@
-package em.kh.ua.roomrx.ui;
+package em.kh.ua.roomrx.ui.view;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,8 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.ViewModelProvider;
 
-import em.kh.ua.roomrx.database.Note;
-import em.kh.ua.roomrx.viewmodel.UpdateViewModel;
+import em.kh.ua.roomrx.data.model.Note;
+import em.kh.ua.roomrx.ui.viewmodel.UpdateViewModel;
 import em.kh.ua.roomrx.R;
 
 public class UpdateActivity extends AppCompatActivity {

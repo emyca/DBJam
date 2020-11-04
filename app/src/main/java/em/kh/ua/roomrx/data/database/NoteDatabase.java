@@ -1,10 +1,12 @@
-package em.kh.ua.roomrx.database;
+package em.kh.ua.roomrx.data.database;
 
 import android.content.Context;
 
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
+
+import em.kh.ua.roomrx.data.model.Note;
 
 
 @Database(entities = Note.class,version = 1,exportSchema = false)

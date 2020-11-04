@@ -1,4 +1,4 @@
-package em.kh.ua.roomrx.ui;
+package em.kh.ua.roomrx.ui.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,9 +12,9 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.ViewModelProvider;
 
 
-import em.kh.ua.roomrx.database.Note;
+import em.kh.ua.roomrx.data.model.Note;
 import em.kh.ua.roomrx.R;
-import em.kh.ua.roomrx.viewmodel.AddViewModel;
+import em.kh.ua.roomrx.ui.viewmodel.AddViewModel;
 
 public class AddActivity extends AppCompatActivity {
 

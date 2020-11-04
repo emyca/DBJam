@@ -1,4 +1,4 @@
-package em.kh.ua.roomrx.ui;
+package em.kh.ua.roomrx.ui.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,9 +17,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import em.kh.ua.roomrx.adapter.MainAdapter;
-import em.kh.ua.roomrx.database.Note;
-import em.kh.ua.roomrx.viewmodel.MainViewModel;
+import em.kh.ua.roomrx.ui.adapter.MainAdapter;
+import em.kh.ua.roomrx.data.model.Note;
+import em.kh.ua.roomrx.ui.viewmodel.MainViewModel;
 import em.kh.ua.roomrx.R;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorWhite"
-    tools:context="em.kh.ua.roomrx.ui.DetailActivity">
+    tools:context=".ui.view.DetailActivity">
 
     <include layout="@layout/toolbar" />
 

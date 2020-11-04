@@ -1,4 +1,4 @@
-package em.kh.ua.roomrx.viewmodel;
+package em.kh.ua.roomrx.ui.viewmodel;
 
 import android.app.Application;
 
@@ -7,8 +7,8 @@ import androidx.lifecycle.AndroidViewModel;
 
 import java.util.List;
 
-import em.kh.ua.roomrx.repository.NoteRepository;
-import em.kh.ua.roomrx.database.Note;
+import em.kh.ua.roomrx.data.repository.NoteRepository;
+import em.kh.ua.roomrx.data.model.Note;
 import io.reactivex.Flowable;
 
 public class MainViewModel extends AndroidViewModel {

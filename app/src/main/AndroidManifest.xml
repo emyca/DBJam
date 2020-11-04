@@ -4,23 +4,23 @@
     package="em.kh.ua.roomrx">
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ui.MainActivity">
+        <activity android:name=".ui.view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.AddActivity" />
-        <activity android:name=".ui.DetailActivity" />
-        <activity android:name=".ui.UpdateActivity" />
+        <activity android:name=".ui.view.AddActivity" />
+        <activity android:name=".ui.view.DetailActivity" />
+        <activity android:name=".ui.view.UpdateActivity" />
     </application>
 
 </manifest>

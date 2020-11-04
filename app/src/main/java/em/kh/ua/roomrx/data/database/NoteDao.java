@@ -1,4 +1,4 @@
-package em.kh.ua.roomrx.database;
+package em.kh.ua.roomrx.data.database;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
@@ -8,6 +8,7 @@ import androidx.room.Update;
 
 import java.util.List;
 
+import em.kh.ua.roomrx.data.model.Note;
 import io.reactivex.Completable;
 import io.reactivex.Flowable;
 

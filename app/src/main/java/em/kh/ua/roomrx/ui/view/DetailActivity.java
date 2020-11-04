@@ -1,4 +1,4 @@
-package em.kh.ua.roomrx.ui;
+package em.kh.ua.roomrx.ui.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import em.kh.ua.roomrx.R;
-import em.kh.ua.roomrx.database.Note;
+import em.kh.ua.roomrx.data.model.Note;
 
 
 public class DetailActivity extends AppCompatActivity {
