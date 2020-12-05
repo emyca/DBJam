@@ -1,4 +1,4 @@
-# RoomRx
+# DBJam
 
 Android app that demonstrates simple CRUD operations in SQLite DB. It uses Room, ViewModel, RxJava 2.
 
